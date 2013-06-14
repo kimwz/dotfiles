@@ -7,6 +7,12 @@
 	excludesfile = ~/.gitignore
 
 [alias]
+	ci = commit
+	co = checkout
+	st = status
+	h = log --graph --pretty=format:'%C(yellow)%h%Creset \
+		-%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
+		--abbrev-commit --date=short -n20
 	history = log --graph --pretty=format:'%C(yellow)%h%Creset \
 		-%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' \
 		--abbrev-commit --date=short -n20
