@@ -74,4 +74,4 @@ git_branch() {
 	echo -en "$color_stat$git_branch"
 }
 
-PS1="\[$BOLD_GREEN\][\[$BOLD_YELLOW\]\u\[$BOLD_GREEN\]@\[$BOLD_BLUE\]\h:\[$BOLD_RED\]"'`pwd`'"\[$BOLD_GREEN\]] "'`git_branch`'" \[$GRAY\]\t\n\[$BOLD_GREEN\]"'\$'"\[$COLOR_NONE\] "
+PS1="\[$BOLD_GREEN\][\[$BOLD_YELLOW\]\u@\h:\[$BOLD_RED\]"'`pwd`'"\[$BOLD_GREEN\]] "'`git_branch`'" \[$GRAY\]\n\[$WHITE\]"'\$'"\[$COLOR_NONE\] "
