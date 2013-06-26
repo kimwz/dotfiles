@@ -30,7 +30,7 @@ alias egrep='egrep --color=auto'
 alias rm='rm -iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
-
+alias gh='git history'
 # screens
 alias scr='screen -rD'
 
@@ -38,6 +38,10 @@ alias scr='screen -rD'
 ##################
 # 3. Color & PS1 #
 ##################
+
+LS_COLORS="ow=01;34"
+export LS_COLORS
+
 
 COLOR_NONE="\e[0m"
 BLACK="\033[0;30m"
