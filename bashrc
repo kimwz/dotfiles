@@ -20,8 +20,12 @@ HISTFILESIZE=20000
 # color and with classfication
 alias ls='ls -F --color=auto'
 alias ll='ls -alF'
-ls1() {ls -t $@ | tail -n +2}
-rm1() {ls -t $@ | tail -n +2 | xargs rm -rf}
+ls1() {
+	ls -t $@ | tail -n +2
+}
+rm1() {
+	ls -t $@ | tail -n +2 | xargs rm -rf
+}
 
 # grep
 alias grep='grep --color=auto'
